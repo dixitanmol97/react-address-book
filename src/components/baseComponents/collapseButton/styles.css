@@ -1,0 +1,20 @@
+.collapseButton {
+    position: sticky;
+    width: 60px;
+    top: 5%;
+    height: 50px;
+    font-size: 1.8rem;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: #3f70b5;
+    border: 1px solid black;
+}
+
+.collapseButton:focus {
+    outline: none;
+}
+
+.collapseButton:hover {
+    background-color: darkgray;
+    cursor: pointer;
+}
