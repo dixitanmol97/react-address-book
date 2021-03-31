@@ -1,0 +1,48 @@
+@import "app/cssAssets/mixins";
+@import "app/cssAssets/variables";
+
+.footer {
+  @include flex-row;
+  background-color: #2c292f;
+  max-width: 100%;
+  flex-wrap: wrap;
+  padding: 1%;
+  margin-top: 20rem;
+  transition: margin-left 0.5s;
+}
+
+.footer-left {
+  flex: 1 1 30%;
+}
+
+.footer-info {
+  color: #8f9296;
+}
+
+.footer-main-info {
+  color: #ffffff;
+}
+
+.footer-center {
+  flex: 1 1 35%;
+}
+
+.footer-icon {
+  @include font($color: $content, $size: $large);
+  cursor: pointer;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-center-link {
+  color: #e0ac1c;
+  text-decoration: none;
+}
+
+.footer-right {
+  flex: 1 1 35%;
+}
+
+.footer-right-icon-group {
+  margin-top: 2%;
+}

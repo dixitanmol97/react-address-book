@@ -1,0 +1,12 @@
+@import "app/cssAssets/mixins";
+@import "app/cssAssets/variables";
+
+.home-page {
+  @include flex-column;
+  transition: margin-left 0.5s;
+  height: 100vh;
+}
+
+.home-page_collapsed {
+  margin-left: 15%;
+}

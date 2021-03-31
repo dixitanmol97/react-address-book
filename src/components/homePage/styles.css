@@ -1,6 +1,0 @@
-home-page {
-  transition: margin-left 0.5s;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}

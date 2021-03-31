@@ -1,0 +1,34 @@
+@import "./variables";
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin block-margin-default-zero($start: 0, $end: 0) {
+  margin-block-start: $start;
+  margin-block-end: $end;
+}
+
+@mixin border($width: 1px, $style: solid, $colour: black) {
+  border: $width $style $colour;
+}
+
+@mixin font(
+  $size: inherit,
+  $color: initial,
+  $weight: initial,
+  $align: initial
+) {
+  font: {
+    size: $size;
+    weight: $weight;
+  }
+  color: $color;
+  text-align: $align;
+}

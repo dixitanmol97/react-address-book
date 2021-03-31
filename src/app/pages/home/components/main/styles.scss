@@ -1,0 +1,108 @@
+@import "app/cssAssets/mixins";
+@import "app/cssAssets/variables";
+
+.main {
+  transition: margin-left 0.5s;
+}
+
+.navigation-collapse-icon {
+  margin: 1rem 0 0 4px;
+  font-size: 2.6rem;
+  position: sticky;
+  top: 1rem;
+  left: 4px;
+  display: inline-block;
+}
+
+.placard-area {
+  margin: 1rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 4rem;
+  justify-content: center;
+}
+
+.placard {
+  border-radius: 12px;
+  background-color: $dark-brown;
+  padding: 0.4rem;
+}
+
+.placard-fallback {
+  border-radius: 12px;
+  border: 1px solid black;
+  height: 300px;
+  background-color: #0000001f;
+}
+
+.placard-profile {
+  @include flex-row;
+  clear: right;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.placard-profile-picture {
+  @include flex-column;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+.placard-footer {
+  @include flex-row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.placard-content {
+  align-self: center;
+  overflow-wrap: break-word;
+  width: calc(100% - 200px);
+}
+
+.placard-content h2 {
+  margin: 0 0 0.6rem 0;
+  color: $content;
+}
+
+.placard-content p {
+  margin: 1rem 0 0 0 0;
+  @include font($size: $normal, $color: $content);
+}
+
+.placard-content strong {
+  color: #0d0d0d;
+}
+
+.placard-date {
+  @include font($color: $label);
+  display: inline;
+  margin: 0;
+}
+
+.placard-hover-options {
+  display: "inline";
+}
+
+.placard-hover-options-icon {
+  margin-left: 1rem;
+  @include font($size: $large);
+}
+
+.group-label {
+  width: 3rem;
+  height: 3rem;
+  float: right;
+  border-radius: 50%;
+  background-color: #bfaca0;
+}
+
+.group-label-text {
+  @include font($align: center, $size: $large, $weight: 500, $color: $label);
+  margin: 0;
+  line-height: 3rem;
+}
